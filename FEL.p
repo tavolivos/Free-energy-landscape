@@ -1,3 +1,9 @@
+###################################
+#  By: Gustavo E. Olivos-Ramirez  #
+#      gustavo.olivos@upch.pe     #
+#      Lima-Peru                  #
+###################################
+
 scale = 1063.0/420.0
 set terminal pngcairo  background "#ffffff" enhanced font "Times-New-Roman-Bold,12" fontscale 1.0 size 350*scale, 250*scale fontscale scale linewidth scale pointscale scale
 set tmargin at screen 0.75
