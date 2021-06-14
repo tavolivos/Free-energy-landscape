@@ -7,16 +7,23 @@ gmx rms -s md_0_10.tpr -f outputfile.xtc -o rmsd.xvg -tu ps   #note that time ha
 gmx gyrate -s md_0_10.tpr -f outputfile.xtc -o rg.xvg<br/>
 ```
 Step 2: perl script creates a thrid columm to obtain data in the order of time, RMSD and Rg.<br/>
+```sh
 perl sham.pl -i1 rmsd.xvg -i2 rg.xvg -data1 1 -data2 1 -o graph.xvg<br/>
-
+```
 Step 3: Free energy calculation with gmx sham<br/>
+```sh
 gmx sham -f graph.xvg -ls gibbs.xpm<br/>
+```
 <br/>
 Step 4: convert .xpm to .dat file<br/>
+```sh
 python2.7 xpm2txt.py -f gibbs.xpm -o FEL.dat<br/>
+```
 <br/>
 Step 5: Plotting in GNUPLOT<br/>
+```sh
 gnuplot FEL.p<br/>
+```
 
 ![alt text](https://github.com/tavolivos/Free-energy-landscape/blob/main/FEL.png?raw=true)
 
