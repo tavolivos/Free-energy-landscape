@@ -19,7 +19,7 @@ Step 4: convert .xpm to .dat file
 python2.7 xpm2txt.py -f gibbs.xpm -o FEL.dat
 ```
 <br/>
-Step 5: Plotting in GNUPLOT<br/>
+Step 5: Plotting in GNUPLOT
 ```sh
 gnuplot FEL.p
 ```
