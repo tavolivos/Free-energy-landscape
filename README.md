@@ -1,5 +1,5 @@
 # Free-energy-landscape<br/>
-In this repository, we present a simple procedure to perform Free Energy landscape plots, taking molecular dynamics results.<br/>
+In this repository, we present a simple procedure to perform Free Energy landscape plots, taking results from molecular dynamics simulation.<br/>
 
 Step 1: RMSD and Rg data from MD<br/>
 gmx rms -s md_0_10.tpr -f outputfile.xtc -o rmsd.xvg -tu ps   #note that time has to be in ps.<br/>
