@@ -20,9 +20,8 @@ python2.7 xpm2txt.py -f gibbs.xpm -o FEL.dat
 ```
 <br/>
 Step 5: Plotting in GNUPLOT
-```sh
+
 gnuplot FEL.p
-```
 <br/>
 ![alt text](https://github.com/tavolivos/Free-energy-landscape/blob/main/FEL.png?raw=true)
 
