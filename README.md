@@ -14,8 +14,7 @@ Step 3: Free energy calculation with gmx sham<br/>
 ```sh
 gmx sham -f graph.xvg -ls gibbs.xpm<br/>
 ```
-<br/>
-Step 4: convert .xpm to .dat file<br/>
+Step 4: convert .xpm to .dat file
 ```sh
 python2.7 xpm2txt.py -f gibbs.xpm -o FEL.dat<br/>
 ```
