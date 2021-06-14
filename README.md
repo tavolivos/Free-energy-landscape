@@ -2,9 +2,10 @@
 In this repository, we present a simple procedure to perform Free Energy landscape plots, taking results from molecular dynamics simulation.<br/>
 
 Step 1: RMSD and Rg data from MD<br/>
+```sh
 gmx rms -s md_0_10.tpr -f outputfile.xtc -o rmsd.xvg -tu ps   #note that time has to be in ps.<br/>
 gmx gyrate -s md_0_10.tpr -f outputfile.xtc -o rg.xvg<br/>
-
+```
 Step 2: perl script creates a thrid columm to obtain data in the order of time, RMSD and Rg.<br/>
 perl sham.pl -i1 rmsd.xvg -i2 rg.xvg -data1 1 -data2 1 -o graph.xvg<br/>
 
