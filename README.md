@@ -23,5 +23,6 @@ Step 5: Plotting in GNUPLOT
 ```sh
 gnuplot FEL.p
 ```
+<br/>
 ![alt text](https://github.com/tavolivos/Free-energy-landscape/blob/main/FEL.png?raw=true)
 
